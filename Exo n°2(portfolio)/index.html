@@ -437,26 +437,7 @@
         
     }); 
     </script>
-<!-- SCRIPT --------------------------------------------------------------------------------------------------------------------------------------------------------------------------->       
-      
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-     <script src="say-cheese.js"></script>
-     
-    <script>
-    $("#myForm").submit(function(event) {
-    event.preventDefault();  // Empêcher le rechargement de la page.
-  
-    var formData = new FormData($("#myForm"));
-  
-    $.ajax({
-    type: "POST",
-    url: "index.php",
-    data: formData,
-    processData: false,  // tell jQuery not to process the data
-    contentType: false   // tell jQuery not to set contentType
-    });
-    });
-    </script>
+
 
      
 <!-- FIN DES SCRIPTs --------------------------------------------------------------------------------------------------------------------------------------------------------------------------->       
