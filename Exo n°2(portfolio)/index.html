@@ -345,7 +345,7 @@
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2730.5968820397225!2d1.686932115882418!3d46.81224615050354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fba0a742fd34c5%3A0x9e8a5716e876d4ca!2s19+Place+du+Palan%2C+36000+Ch%C3%A2teauroux!5e0!3m2!1sen!2sfr!4v1448320608710" width="1000" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
                   </div>
                   <div class="col-md-2 col-md-offset-2 col-sm-6">
-                      <form  method="get" action="biblio/index.php">
+                      <form  method="POST" action="biblio/index.php">
                           <fieldset>
                                 <legend>Formulaire de contact</legend>
                                     <div class="form-group">
@@ -436,6 +436,26 @@
         
         
     }); 
+    </script>
+<!-- SCRIPT --------------------------------------------------------------------------------------------------------------------------------------------------------------------------->       
+      
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+     <script src="say-cheese.js"></script>
+     
+    <script>
+    $("#myForm").submit(function(event) {
+    event.preventDefault();  // Empêcher le rechargement de la page.
+  
+    var formData = new FormData($("#myForm"));
+  
+    $.ajax({
+    type: "POST",
+    url: "index.php",
+    data: formData,
+    processData: false,  // tell jQuery not to process the data
+    contentType: false   // tell jQuery not to set contentType
+    });
+    });
     </script>
 
      
