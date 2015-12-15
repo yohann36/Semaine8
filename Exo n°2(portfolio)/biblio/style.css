@@ -196,7 +196,7 @@ section h3{
     box-shadow:3px 3px 2px #155E34 ;
 }
  
-form{
+.jumbotron form{
     border: 2px dashed black;
     border-radius:10px;
     padding:10px;

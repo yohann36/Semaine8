@@ -345,28 +345,28 @@
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2730.5968820397225!2d1.686932115882418!3d46.81224615050354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fba0a742fd34c5%3A0x9e8a5716e876d4ca!2s19+Place+du+Palan%2C+36000+Ch%C3%A2teauroux!5e0!3m2!1sen!2sfr!4v1448320608710" width="1000" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
                   </div>
                   <div class="col-md-2 col-md-offset-2 col-sm-6">
-                      <form  method="POST" action="biblio/index.php">
+                      <form id="my_form" method="POST" action="biblio/index.php">
                           <fieldset>
                                 <legend>Formulaire de contact</legend>
                                     <div class="form-group">
                                       <label for="prenom">Prénom</label>
-                                      <input type="text" id="prenom" class="form-control" placeholder="Prénom">
+                                      <input type="text" name="prenom" id="prenom" class="form-control" placeholder="Prénom">
                                     </div>
                                     <div class="form-group">
                                       <label for="Nom">Nom du Responsable</label>
-                                      <input type="text" id="nom" class="form-control" placeholder="Mr Dupont">
+                                      <input type="text" name="nom" id="nom" class="form-control" placeholder="Mr Dupont">
                                     </div>
                                     <div class="form-group">
                                       <label for="telephone">Nom de la société</label>
-                                      <input type="tel" id="telephone" class="form-control" placeholder="00 00 00 00 00 00">
+                                      <input type="tel" id="telephone" name="telephone" class="form-control" placeholder="00 00 00 00 00 00">
                                     </div>
                                     <div class="form-group">
                                         <label for="email">Email</label>
-                                        <input type="email" class="form-control" id="email" placeholder="yohann.doe@example.com">
+                                        <input type="email" name="email" class="form-control" id="email" placeholder="yohann.doe@example.com">
                                     </div>
                                     <div class="form-group">
                                         <label for="comment">Message</label>
-                                        <textarea id="comment" class="form-control" rows="5" placeholder="commentaire"></textarea>
+                                        <textarea id="comment" name="comment" class="form-control" rows="5" placeholder="commentaire"></textarea>
                                     </div>
                                     <p><button type="submit" class="btn btn-primary" id="button">Envoyer</button></p>
                           </fieldset>
@@ -439,7 +439,6 @@
     </script>
 
 
-     
 <!-- FIN DES SCRIPTs --------------------------------------------------------------------------------------------------------------------------------------------------------------------------->       
    
     </body>
